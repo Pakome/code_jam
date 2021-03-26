@@ -1,0 +1,24 @@
+{
+  "name": "codejam_2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/solution.js",
+    "start:build": "BABEL_ENV=build rollup -c && yarn start",
+    "test": "BABEL_ENV=test jest --watchAll",
+    "build": "BABEL_ENV=build rollup -c"
+  },
+  "keywords": [
+    "codejam",
+    "google"
+  ],
+  "author": "Max",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "rollup": "^2.42.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
